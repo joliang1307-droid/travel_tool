@@ -14,7 +14,7 @@ def clean_data(df):
     return df
 
 st.set_page_config(
-    page_title="📍旅遊資料彙整小管家",
+    page_title="📍旅遊資料統整小管家",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
@@ -134,7 +134,7 @@ if current_page=="list":
         uploaded_file=st.file_uploader(
         "請上傳您的CSV檔案",
         type=["csv"],
-        help="上傳後，下方的智慧控制面板與卡片將會為您優雅地浮現。"
+        help="上傳CSV檔後，下方會浮現您的專屬景點卡。"
         )
 
         if uploaded_file is not None:
